@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Web</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+
+  <!--Navegador-->
+  <header class="cd-auto-hide-header">
+    <div class="logo"><a href="#0"><img src="img/logo.png" alt="Logo"></a></div>
+  
+    <nav class="cd-primary-nav">
+      <a href="#cd-navigation" class="nav-trigger">
+        <span>
+          <em aria-hidden="true"></em>
+          Menu
+        </span>
+      </a> <!-- .nav-trigger -->
+  
+      <ul id="cd-navigation">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="servicios.html">Servicio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav> <!-- .cd-primary-nav -->
+  </header> <!-- .cd-auto-hide-header -->
+
+  <div class="arcane">
+    <H1>videos realizados</H1>
+  </div>
+
+ <!--Video-->
+ <h1>MUNDO MULTIMEDIA</h1>
+ <p>Conoce el desarrollo audioviaual con el cual puede contar tu marca y asi tener una imagen más profesional</p>
+
+ <iframe width="720" height="500" src="https://www.youtube.com/embed/__ZoE00Tnps" title="YouTube video player" 
+ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen; ></iframe>
+
+    <!--JavaScript-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    
+
+    <!-- .cd-main-content -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+<!--footer-->
+<div class="footer">
+  <p>@2022 Este portafolio comprende trabajos realizados por Andrés Velez<br>
+Por medio de su marca registrada @Horusmarketing</p>
+
+  <div class="copy">
+    <li><a href="#">Política de Privacidad</a></li>
+    <li><a href="#">Términos de Uso</a></li>
+  </div>
+</div>
+
+</body>
+</html>
